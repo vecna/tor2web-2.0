@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 11px;
+}
+
+#bodyArea {
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    border-left: 1px solid #D0D0D0;
+    border-right: 1px solid #D0D0D0;
+    
+}
+#headerArea {
+    display: block;
+    width: 100%;
+    height: 130px;
+    background: #13378C;
+    margin-bottom: 10px;
+    position: relative;
+}
+#logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 27px;
+    font-weight: bold;
+    color: #fff;
+}
+#dir {
+    font-style: italic;
+}
+#motto {
+    font-size: 19px;
+    font-style: italic;
+    font-stretch: expanded;
+    font-weight: normal;
+}
+.cat0, .cat1 {
+    float: left;
+    width: 40%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+.cat0 {
+    margin-left: 5%;
+    border: 1px dashed #BFD0F7;
+    background: #F3F7FE;    
+}
+.cat1 {
+    margin-left: 10%;
+    border: 1px dashed #FC9914;
+    background: #FFF7EA;        
+}
+.catLink {
+    text-decoration: none;
+    color: #808080;
+}
+.catTitle {
+    font-size: 17px;
+    font-weight: bold;
+}
+.catCount {
+    float: right;
+    font-size: 11px;
+    font-style: italic;
+    margin-right: 10px;
+}
+#footer {
+    display: block;
+    width: 100%;
+    height: 20px;
+    line-height: 20px;
+    font-size: 9px;
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    background: #13378C; 
+    clear: both;    
+}
+ul#topMenu {
+  list-style-type: none;  
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+}
+ul#topMenu li{
+    float: left;
+}
+ul#topMenu li a{
+    padding: 5px;
+    border: 1px solid #000;
+    background: #1E5599;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;   
+}
+ul#topMenu li a:hover{
+    background: #7BABE6;
+    color: #000;
+}
+.form {
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 15px;
+}
+.formLine {
+    padding: 5px;
+    margin-bottom: 10px;
+    border-bottom: 1px dotted #F0F0F0;
+    overflow: auto;
+}
+label {
+    float: left;
+    width: 150px;
+}
+.input {
+    font-size: 13px;
+    border: 2px solid #808080;
+}
+.inputXL {
+    width: 300px;   
+}
+.inputXXL {
+    width: 500px;   
+}
+.inputTxt {
+    width: 300px;
+    height: 100px;
+}
+.inputTxtXL {
+    width: 500px;
+    height: 300px;
+}
+form {
+    padding: 0;
+    margin: 0;
+}
+
+.error, .success {
+    margin-left: 5%;
+    width: 90%;
+    border: 1px dashed #800000;
+    background: #EEB7B7;
+    padding: 5px 5px 5px 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.success {
+    border-color: #008000;
+    background: #D1E1C4;
+}
+.errorSymbol, .successSymbol {
+   position: absolute;
+   left: 5px;     
+   top: 5px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #800000;
+}
+.successSymbol {
+    color: #008000;
+}
+.navBar {
+    padding: 10px;
+}
+.navBar a {
+    color: #808080;
+}
+a.resList {
+    text-decoration: none;
+    color: #000;
+}
+.emptyCat {
+    padding: 20px;
+    text-align: center;
+    color: #F0F0F0;
+    font-size: 33px;
+}
+.linkCommenter {
+    margin-left: 10%;
+    margin-bottom: 2px;
+}
+.catResult0, .catResult1{
+    margin-left: 10%;
+    width: 80%;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+.catResult0 {
+    border: 1px dashed #1C6FB3;
+    background: #D1E7F8;
+}
+.catResult1 {
+    border: 1px dashed #D58A1C;
+    background: #F8E6CB;
+}
+.resTitle {
+    text-decoration: underline;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #808080;
+    font-size: 13px;
+}
+.resDesc {
+    padding: 3px;
+    border: 1px dotted #808080;
+    background: #F0F0F0;
+    width: 90%;
+    margin-left: 5%;
+    display: block;
+    margin-bottom: 10px;
+}
+.resURL {
+    text-decoration: underline;
+    font-weight: bold;
+    color: #585858;
+    margin-bottom: 5px;
+}
+#searchArea {
+    padding: 5px;
+    border: 1px dotted #38669E;
+    background: #E9EFF8;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+#loginArea {
+    padding: 5px;
+    border: 1px dotted #38669E;
+    background: #E9EFF8;
+    position: absolute;
+    right: 20px;
+    top: 70px;    
+}
+.listTab {
+    display: block;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 11px;    
+}
+.lTab {
+    width: 100%;
+    border: 1px solid #1C4E77;
+    padding: 5px;
+}
+.lTab tr td{ font-size: 11px; padding: 3px; }
+
+.lTab tr.head td {
+    color: #fff;
+    background: #1C4E77;
+    font-weight: bold;
+}
+.lTab tr.linha0 td {  
+    background: #EEF5FB;
+}
+.lTab tr.linha1 td {  
+    background: #DBEAF7;
+}
+.actionLine {
+    padding: 2px;
+    color: #2872B5;
+    border-bottom: 1px dotted #2872B5;
+}
+.actionLine a{
+   color: #2872B5;
+   text-decoration: none;
+   display: block;
+}  
+.actionLine a:hover{  
+    background: #B3D8F2;
+}
+span.alert {
+    background: #800000;
+    color: #fff;
+    padding: 3px;
+}
+
+.topBtn {
+    border: 1px solid #13476F;
+    padding: 5px;
+    margin-bottom: 10px;
+    background: #D3E9F8;
+    width: 200px;
+}
+.topBtn a{
+    display: block;
+    text-decoration: none;
+    color: #13476F;
+}   
+.topBtn a:hover{
+    background: #A4D1F0;
+}  
+.linkDetails {
+    padding: 10px;
+    margin-left: 5%;
+}
+.linkDLine {
+    position: relative;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.linkDLabel {
+    float: left;
+    width: 110px;
+    font-weight: bold;
+}
+.commentLine0, .commentLine1 {
+    margin-left: 10%;
+    width: 80%;
+    padding: 5px;
+    border: 1px solid #808080;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+.commentLine1{ background: #F0F0F0;
+}
+.commentInfo {
+    background: #585858;
+    color: #fff;
+    padding: 2px;
+    margin-bottom: 3px;
+}
+.nav {
+    text-align: center;
+}
