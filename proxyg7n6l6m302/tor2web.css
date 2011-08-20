@@ -29,6 +29,7 @@ html, body
 .tor2web-text
 {
     font-size: 1.2em;
+    text-align: left;
     margin: 0.5em;
 }
 
@@ -38,5 +39,4 @@ html, body
     margin: 0.1em;
     width: 100%;
     text-align: center;
-    vertical-align: center;
 }
