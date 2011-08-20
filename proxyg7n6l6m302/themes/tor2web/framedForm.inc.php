@@ -128,17 +128,17 @@ echo <<<OUT
 <p id="disclaimer">
 
 <p class="left-align">
-	You are visiting a <a href="https://www.torproject.org/docs/tor-hidden-service.html.en">Tor Hidden Service</a> Website trough <a href="http://www.tor2web.org">Tor2web</a> Proxy.<br>
+	You are visiting a <a href="https://www.torproject.org/docs/tor-hidden-service.html.en">Tor Hidden Service</a> Website through <a href="http://www.tor2web.org">Tor2web</a> Proxy.<br>
 </p>
 <img src="/proxyg7n6l6m302/themes/tor2web/tor2web-small.png" class="resized-logo">
 <p class="left-align">
 	Tor2web servers <b>are not hosting this web content</b> you are viewing.<br>
-	Tor2web can identify the IP of visitors of this site, we strongly suggest to access this site directly with <a href="https://www.torproject.org/download/download.html.en">Tor Browser Bundle</a> to increase your anonimity and efficiency.
+	Tor2web can identify the IP of visitors of this site, we strongly suggest to access this site directly with <a href="https://www.torproject.org/download/download.html.en">Tor Browser Bundle</a> to increase your anonymity and efficiency.
 </p>
 
 <p class="right-align">
-	If you feel this website violate some kind of user policy or ethical code, you can fill an <a href="/proxyg7n6l6m302/contact.php?t=abuse">Abuse Complaint</a>.<br>
-	If you want to report a bug or a problem, you can Send us an <a href="/proxyg7n6l6m302/contact.php?t=problem">Error Notification</a>.
+	If you feel this website violates some kind of user policy or ethical code, you can fill an <a href="/proxyg7n6l6m302/contact.php?t=abuse">Abuse Complaint</a>.<br>
+	If you want to report a bug or a problem, you can send us an <a href="/proxyg7n6l6m302/contact.php?t=problem">Error Notification</a>.
 </p>
 
 <p class="left-align">
