@@ -186,75 +186,7 @@ switch ( $action ) {
       break;
       
          
-      /*****************************************************************
-      * Delete individual proxified cookies
-      ******************************************************************/
-      case 'cookies':
-      
-         // Check we have some to delete
-         if ( empty($_POST['delete']) || ! is_array($_POST['delete']) ) {
-            redirect('cookies.php');
-         }
-      
-         // Go through all submitted cookies and delete them.
-         if ( $CONFIG['cookies_on_server'] ) {
-         
-            // Server-side storage. Look for cookie file.
-            if ( file_exists($cookieFile = $CONFIG['cookies_folder'] . session_id()) && ( $file = file($cookieFile) ) ) {
-            
-               // Loop through lines, looking for cookies to delete
-               foreach ( $file as $id => $line ) {
-                  
-                  // Ignore comment lines
-                  if ( ! isset($line[0]) || $line[0] == '#' ) {
-                     continue;
-                  }
-                  
-                  // Split by tab
-                  $details = explode('	', $line);
-                  
-                  // Check valid split, expecting 7 items
-                  if ( count($details) != 7 ) {
-                     continue;
-                  }
-                  
-                  // Create string formatted in same way as our input
-                  $cookie = $details[0] . '|' . $details[2] . '|' . $details[5];
-                  
-                  // Are we deleting this?
-                  if ( in_array($cookie, $_POST['delete']) ) {
-                     unset($file[$id]);
-                  }
-                  
-               }
-               
-               // Put file back together
-               file_put_contents($cookieFile, $file);
-               
-            }
-            
-         } else {
-            
-            // Client-side cookies
-            
-            // Generate an expiry time in the past
-            $expires = time() - 3600;
-            
-            // Client-side cookies - split by | to get cookie details
-            foreach ( $_POST['delete'] as $cookie ) {
-            
-               $details = explode('|', $cookie, 3);
-               
-               // Check for successful split
-               if ( ! isset($details[2]) ) {
-                  continue;
-               }
-               
-               // Extract parts
-               list($domain, $path, $name) = $details;
-            
-               // Generate an encoded/unencoded cookie name, depending on settings
-               if ( $CONFIG['encode_cookies'] ) {
+               cookies'] ) {
                   $name = COOKIE_PREFIX . '[' . urlencode(base64_encode($domain . ' ' . $path . ' ' . urlencode($name))) . ']';
                } else {
                   $name = COOKIE_PREFIX . '[' . $domain . '][' . $path . '][' . $name . ']';
@@ -270,43 +202,6 @@ switch ( $action ) {
          // Redirect back to cookie page
          redirect('cookies.php');
       
-         break;
-         
-         
-      /*****************************************************************
-      * Edit virtual browser
-      ******************************************************************/
-      case 'edit-browser':
-      
-         // Prepare submitted information
-         $browser['user_agent'] = isset($_POST['user-agent'])    ? clean($_POST['user-agent']) : '';
-         $browser['referrer']   = empty($_POST['real-referrer']) ? 'custom'                    : 'real';
-         
-         if ( $browser['referrer'] == 'custom' ) {
-            $browser['referrer'] = isset($_POST['custom-referrer']) ? clean($_POST['custom-referrer']) : '';
-         }
-
-         // Only save tunnel information if all was submitted
-         if ( empty($_POST['tunnel']) || empty($_POST['tunnel-port']) || empty($_POST['tunnel-type']) ) {
-         
-            $browser['tunnel'] = $browser['tunnel_port'] = $browser['tunnel_type'] = '';
-         
-         } else {
-            $browser['tunnel']      = clean($_POST['tunnel']);
-            $browser['tunnel_port'] = clean($_POST['tunnel-port']);
-            $browser['tunnel_type'] = clean($_POST['tunnel-type']);  
-         }
-         
-         // Save in session
-         $_SESSION['custom_browser'] = $browser;
-         
-         // Anywhere to go back to?
-         if ( isset($_POST['return']) ) {
-            redirect($_POST['return']);
-         }
-         
-         redirect('edit-browser.php');
-         
          break;
          
          
