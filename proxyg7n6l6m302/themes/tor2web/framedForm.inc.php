@@ -137,7 +137,7 @@ echo <<<OUT
 </p>
 
 <p class="right-align">
-	If you feel this website violate some kind of user policy or ethical code, you can fill an <a href="/proxyg7n6l6m302/contact.php?t=abuse">Abuse Complain</a>.<br>
+	If you feel this website violate some kind of user policy or ethical code, you can fill an <a href="/proxyg7n6l6m302/contact.php?t=abuse">Abuse Complaint</a>.<br>
 	If you want to report a bug or a problem, you can Send us an <a href="/proxyg7n6l6m302/contact.php?t=problem">Error Notification</a>.
 </p>
 
