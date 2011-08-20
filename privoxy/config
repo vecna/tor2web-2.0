@@ -19,7 +19,7 @@ templdir /etc/privoxy/templates
 
 # Actions to cleanup X-Forwarded-For HTTP Header
 actionsfile /etc/privoxy/privacy.action
-actionsfile /etc/privoxy/blocking.action
+# actionsfile /etc/privoxy/blocking.action
 
 # If you need to debug privoxy with /tmp/privoxy.log uncomment below
 # debug 64

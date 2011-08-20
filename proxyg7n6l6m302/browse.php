@@ -195,7 +195,7 @@ if ( ! empty($CONFIG['blacklist']) ) {
    foreach ( $CONFIG['blacklist'] as $domain ) {
 
       // Check for match
-      if ( strpos($URL['host'], $domain) !== false ) {
+      if ( strpos(md5($URL['host']), $domain) !== false ) {
 
          // If matched, site is banned
          error('banned_site', $URL['completepath'], $URL['href']);

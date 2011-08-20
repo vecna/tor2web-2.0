@@ -1,3 +1,0 @@
-# Hide Tor exit notation in Host and Referer Headers
-FILTER: xforwarded-server-header
-s@^X-Forwarded-Server:.*$@@

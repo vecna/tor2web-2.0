@@ -15,11 +15,6 @@
 * the original settings.php file from the glype package.
 ******************************************************************/
 
-/*****************************************************************
-* Node maintainer settings
-******************************************************************/
-
-$CONFIG['email'] = "abuse@tor2web.org";
 
 /*****************************************************************
 * Installation Options
@@ -28,6 +23,8 @@ $CONFIG['email'] = "abuse@tor2web.org";
 // Theme/skin to use. This should be the name of the appropriate
 // folder inside the /themes/ folder.
 $CONFIG['theme'] = 'tor2web';
+
+$CONFIG['email'] = 'naif@globaleaks.org';
 
 // Temporary directory used by the script. Many features require
 // write permission to the temporary directory. Ensure this
@@ -102,14 +99,14 @@ $CONFIG['hotlink_domains'] = array();
 
 // Enable / disable the cache feature. If disabled, skip the rest of
 // this section.
-$CONFIG['use_cache'] = true;
+$CONFIG['use_cache'] = false;
 
 // Apply caching to requests for these file types.
 $CONFIG['cache_file_types'] = array('css', 'jpg', 'jpeg', 'png', 'gif', 'js', 'flv', 'zip', 'rar');
 
 // If you have limited disk space, you can apply caching to specific
 // websites only (listed below).
-$CONFIG['cache_all'] = true;
+$CONFIG['cache_all'] = false;
 
 // Use the cache for these websites. This option has no effect if
 // the above "Cache all" option is enabled.
@@ -128,7 +125,7 @@ $CONFIG['cache_path'] = $CONFIG['tmp_dir'] . 'cache/';
 
 // Enable/disable the logging feature. If disabled, skip the rest of
 // this section.
-$CONFIG['enable_logging'] = true;
+$CONFIG['enable_logging'] = false;
 
 // Enter a destination for log files. A new log file will be created
 // each day in the directory specified. The directory must be
@@ -139,7 +136,7 @@ $CONFIG['logging_destination'] = $CONFIG['tmp_dir'] . 'logs/';
 // You can avoid huge log files by only logging requests for .html
 // pages, as per the default setting. If you want to log all
 // requests (images, etc.) as well, enable this.
-$CONFIG['log_all'] = true;
+$CONFIG['log_all'] = false;
 
 
 /*****************************************************************
@@ -150,7 +147,7 @@ $CONFIG['log_all'] = true;
 $CONFIG['whitelist'] = array();
 
 // Block these websites
-$CONFIG['blacklist'] = array('vs5hb2ybldb4gfja', 'w7b5kmjonf4h6fea', 'cm6pxkmeyhf7kryb', '7o6dcmajcps4tbjb', '75aiiotc26qp4j2y', 'c7jh7jzl3taek4eh', 'iecwyzlr6ydaoc4z', '5cez64xymwnci47y', 'ylze62ejorjyfe7z', 'mldiefslh2tfrpu5', 'waivt2ksvjukhsps', 'jkpos24pl2r3urlw', 'opva2pilsncvtwmh', '46dspvfldjiqzsre', 'c7jh7jzl3teak4eh', '32zaudfm5y6w3ypy', 'kdq2y44aaas2aiu4', '4eiruntyxxbgfv7o', 'xqz3u5drneuzhaeo', '6x77gb7ngu6nymwl', 'kpvz7ki2v5agwt35', 'ci3hn2uzjw2wby3z', 'mf7ww4oo2ztz3xuv', 'nropmqpuz7ubtfea', 'j4ddjgxetfx2ybcx');
+$CONFIG['blacklist'] = array('f32f7088f1d225b6b5c56d5ec4e5e6c9', 'd1faaa36d01964d1f987fe992006ed23', '9b666b99f9f709771180752fac4e784e', 'fa2f9722a68806e3536a1b9b41783359', '912cddddf31444dfa1005fabf548c8f7', '6d3d9fc735a24112462dc2c5bc547633', '97ff8f3fd33068ddea053fae8c93daf7', '1e49bcafa8a011f31a826d0bd60281bc', '3d02ac074220d684ed099897d304e082', 'f7b037fb61dc00147490727cfce7f2dd', '65c5152d8e4d3b4d097612e6df8eab93', '5b225270bb26ac71ba43d64e3f6ebddd', '96ad66add82b63ab4f048707117ce059', '67f5031a2d6d13501aaa03dbbf500260', 'ced3a2ca13737e4fb123122cf251127b', 'b114e2f1586f245798c2ffb77e4f0736', 'ea2f93383a900d185287144227d4de12', 'c22a4915ee32837c2ea23baa0d13dd28', 'ec4a616918520ab0b8ef4431269e979d', '4d7c82d9cab0fe2c85cf30e12518ec48', '35d7dea6c8c58cc286fdb0e8bb3cbcba', 'd470339d7989178a07e4915228309cd2', '27c58ae958152d4c9a4096fe6e3c981f', '2bbeb602d75369444a42ab8c6128b7da', 'ad88d74b68a90fdbd46be85a0', '5226a016c2a35e5319b7fb7055e5c0e4');
 
 
 /*****************************************************************
@@ -191,7 +188,7 @@ $CONFIG['resume_transfers'] = false;
 
 // You can limit use of your proxy to allow only one transfer at a
 // time per user. Disable this for faster browsing.
-$CONFIG['queue_transfers'] = true;
+$CONFIG['queue_transfers'] = false;
 
 
 /*****************************************************************
