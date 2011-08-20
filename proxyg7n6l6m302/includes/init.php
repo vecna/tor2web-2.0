@@ -41,7 +41,7 @@ define('COMPATABILITY_MODE', true);
 $tmp = explode(".",$_SERVER['HTTP_HOST']);
 
 $hostname['onion'] = $tmp[0];
-$hostname['base'] = ".glype.tor.infosecurity.ch";
+$hostname['base'] = ".tor2web.org";
 
 define('GLYPE_PROXY', '/proxyg7n6l6m302/');
 
@@ -448,7 +448,7 @@ function proxifyURL($url, $givenFlag = false) {
 
       // It is an external non tor2web site
       if(!$tmp){
-        return $proxyurl."leaving.php?url=".$url;
+        return $proxyurl."proxyg7n6l6m302/leaving.php?url=".$url;
       }
 
       else {

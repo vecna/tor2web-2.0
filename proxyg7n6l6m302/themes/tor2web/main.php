@@ -9,11 +9,22 @@
 /* GLOBAL ELEMENTS */
 html,body {
    margin: 0; padding: 0;
-   background: #0b1933;
+      text-align: center;
+      border-top: 0.2em solid #ce6c1c;
+      font: 18px Verdana, Arial, Tahoma;
+      color: black;
+      /* background: #0b1933; */
+      background: #f5f5f5;
+      position: absolute;
+      top:0; left:0;
+      height: 250px;
+      z-index: 100000;
+      width: 100%;   
+/*background: #0b1933;
    font-size: 100%;
    font-family: "trebuchet ms", arial, verdana;
 	color: #444;
-   text-align: center;
+   text-align: center;*/
 }
 a {
    color: #EF7B0A;
@@ -39,8 +50,8 @@ p, td, th, ul {
 
 #content {
    background: #fff;
-   border-top: 3px solid #ce6c1c;
-   border-bottom: 3px solid #ce6c1c;
+   /* border-top: 3px solid #ce6c1c;
+   border-bottom: 3px solid #ce6c1c; */
    padding: 20px;
 }
 
@@ -162,13 +173,14 @@ disableOverride();
    <div id="wrapper">
    
       <div id="header">
-         <h1><a href="index.php"><?php
-         // Just a bit of PHP to auto-color a multiple word name
+         <h1><a href="http://www.tor2web.org">
+         <img src="/proxyg7n6l6m302/themes/tor2web/tor2web-small.png" class="resized-logo"><?php
+         /* Just a bit of PHP to auto-color a multiple word name
          global $themeReplace;
          if (isset($themeReplace['site_name'])) {
             $spacePos = strrpos($themeReplace['site_name'], ' ');
             echo substr_replace($themeReplace['site_name'], '<span>', $spacePos, 1) . '</span>';
-         }
+         } */
          ?></a></h1>
       </div>
    
@@ -177,54 +189,17 @@ disableOverride();
       
          <!--[error]-->
          
-         <h2 class="first">About</h2>
+         <h2 class="first">Connection failed (via tor2web.org)</h2>
          
          <!--[description]-->
          
-         <h2>Enter URL</h2>
-         
-         <!--[index_above_form]-->
-         
-         <form action="includes/process.php?action=update" method="post" onsubmit="return updateLocation(this);" class="form">
-            <input type="text" name="u" id="input" size="40" class="textbox">
-            <input type="submit" value="Go" class="button">
-            &nbsp;
-            [<a style="cursor:pointer;" onclick="document.getElementById('options').style.display = (document.getElementById('options').style.display=='none'?'':'none')">options</a>]
-            <ul id="options">
-<?php foreach ( $toShow as $option ) echo <<<HTML
-               <li>
-                  <input type="checkbox" name="{$option['name']}" id="{$option['name']}"{$option['checked']}>
-                  <label for="{$option['name']}" class="tooltip" onmouseover="tooltip('{$option['escaped_desc']}')" onmouseout="exit();">{$option['title']}</label>
-               </li>
-HTML;
-?>
-            </ul>
-            <br style="clear: both;">
-         
-         </form>
-         
-         <!--[index_below_form]-->
-
-         <!-- CONTENT END -->
-         
-         <!--// Optional navigation supplied.  Uncomment and edit if you want to use but make sure the pages exist!
-         <ul id="nav">
-            <li class="left"><a href="index.php">Home</a></li>
-            <li class="left"><a href="edit-browser.php">Edit Browser</a></li>
-            <li class="left"><a href="cookies.php">Manage Cookies</a></li>
-            <li><a href="privacy.php">Privacy Policy</a></li>
-            <li><a href="disclaimer.php">Disclaimer</a></li>            
-            <li><a href="terms.php">Terms of Use</a></li>            
-         </ul>
-         -->
-         
-      </div>
-      
+<!--      
       <div id="footer">
          &copy; 2008 <a href="index.php"><!--[site_name]--></a> : Powered by <a href="http://www.glype.com/">glype</a> <!--[version]-->
 		</div>
 
 	</div>
+-->
 
 </body>
 </html>
