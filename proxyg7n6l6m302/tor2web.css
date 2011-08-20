@@ -1,6 +1,25 @@
+html, body 
+{
+    text-align: center;
+    border-top: 0.2em solid #ce6c1c;
+    font: 1em Verdana, Arial, Tahoma;
+    color: black;
+    /* background: #0b1933; */
+    background: #f5f5f5;
+    position: absolute;
+    top:0; left:0;
+    z-index: 100000;
+    width: 100%;   margin: 0; padding: 0;
+}
+
+#wrap {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .tor2web-title
 {
-    font-family: Helvetica, Verdana, Arial;
+    font-family: Verdana, Arial;
     font-size: 2.5em;
     margin: 0.6em;
     margin-top: black solid 0.1em;

@@ -13,26 +13,6 @@ else {
 <html>
 <head>
    <title>Warning you are leaving tor2web</title>
-   <style type="text/css">
-html,body {
-      text-align: center;
-      border-top: 0.2em solid #ce6c1c;
-      font: 1em Verdana, Arial, Tahoma;
-      color: black;
-      /* background: #0b1933; */
-      background: #f5f5f5;
-      position: absolute;
-      top:0; left:0;
-      height: 250px;
-      z-index: 100000;
-      width: 100%;   margin: 0; padding: 0;
-}
-      #wrap {
-         width: 500px;
-         margin: 0 auto;
-      }   
-    
-   </style>
 <link rel="stylesheet" type="text/css" href="tor2web.css">
 </head>
 <body>

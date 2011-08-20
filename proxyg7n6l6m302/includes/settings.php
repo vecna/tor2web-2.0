@@ -24,7 +24,7 @@
 // folder inside the /themes/ folder.
 $CONFIG['theme'] = 'tor2web';
 
-$CONFIG['email'] = 'naif@globaleaks.org';
+$CONFIG['email'] = 'team@globaleaks.org';
 
 // Temporary directory used by the script. Many features require
 // write permission to the temporary directory. Ensure this
@@ -99,14 +99,14 @@ $CONFIG['hotlink_domains'] = array();
 
 // Enable / disable the cache feature. If disabled, skip the rest of
 // this section.
-$CONFIG['use_cache'] = false;
+$CONFIG['use_cache'] = true;
 
 // Apply caching to requests for these file types.
 $CONFIG['cache_file_types'] = array('css', 'jpg', 'jpeg', 'png', 'gif', 'js', 'flv', 'zip', 'rar');
 
 // If you have limited disk space, you can apply caching to specific
 // websites only (listed below).
-$CONFIG['cache_all'] = false;
+$CONFIG['cache_all'] = true;
 
 // Use the cache for these websites. This option has no effect if
 // the above "Cache all" option is enabled.
