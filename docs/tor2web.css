@@ -1,0 +1,33 @@
+.tor2web-standard
+{
+    padding: 4em 4em 4em 4em;
+}
+
+.tor2web-title
+{
+    size: 2.4em;
+}
+
+.tor2web-big-logo
+{
+    text-align: center;
+}
+
+.tor2web-text
+{
+    size: 1.2em;
+}
+
+#tor2web-floating
+{
+    position: fixed;
+    top: 1em;
+    left: 20%;
+    width: 60%;
+    text-align: center;
+    background-color: #e0fdd2;
+    border red solid 0.1em;
+    border blue solid 0.2em;
+    border yellow solid 0.3em;
+    padding: 0.2em 0.2em 0.2em 0.2em;
+}
