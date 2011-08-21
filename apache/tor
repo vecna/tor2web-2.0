@@ -78,15 +78,15 @@ NameVirtualHost	*:80
 
 	# Possible values include: debug, info, notice, warn, error, crit,
 	# alert, emerg.
-	LogLevel warn
+	LogLevel crit
 
 #	CustomLog /var/log/apache2/tor.infosecurity.ch.access.log "%v %h %l %u %t \"%r\" %>s %b"
 	CustomLog /var/log/apache2/tor.infosecurity.ch.access.log combined
-#	CustomLog /dev/null combined
+	CustomLog /dev/null combined
 
     AddType application/x-httpd-php .php 
-    RewriteLog "/root/rewrite.log"
-    RewriteLogLevel 3
+#    RewriteLog "/root/rewrite.log"
+#    RewriteLogLevel 3
 
 </VirtualHost>
 
@@ -98,6 +98,6 @@ MinSpareThreads      25
 MaxSpareThreads      75 
 ThreadLimit          1920
 ThreadsPerChild      64
-MaxClients          2048
+MaxClients          256
 MaxRequestsPerChild   0
 </IfModule>
