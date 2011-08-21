@@ -16,3 +16,5 @@ backward compatible with old tor2web
 /privoxy
 contains the privoxy configuration to use in conjunction with tor
 
+/scripts
+contain scripts useful for the maintenance of tor2web nodes
